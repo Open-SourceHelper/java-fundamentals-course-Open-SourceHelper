@@ -1,81 +1,97 @@
 # Fundamentos de Java con una mascota virtual
 
-## Resumen del curso
+## Resumen del Curso
+Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de la programación con Java, incluyendo programación orientada a objetos, construyendo paso a paso una mascota virtual llamada Nube. **¡No requiere descargas!** Solo abre tu navegador web.
 
-Este curso introduce a estudiantes de secundaria a la programación con Java. En seis lecciones construyen paso a paso una mascota virtual llamada Nube, desde el primer mensaje hasta un refugio con dos objetos.
+**Duración total**: ~57 minutos de video (más el tiempo que cada estudiante pause para practicar)  
+**Público Objetivo**: Estudiantes de 12 a 17 años sin experiencia en programación  
+**Prerrequisitos**: Ninguno  
+**Herramientas necesarias**: **¡Solo tu navegador web!** (Chrome, Firefox, Safari, Edge) con el editor en línea OnlineGDB
 
-**Duración:** 57 minutos según el plan del equipo. **Público:** estudiantes de 12 a 17 años sin experiencia previa. **Herramientas:** un navegador y OnlineGDB. Las pausas de práctica se suman al tiempo de video.
+**Repositorio de Código Fuente**: [https://github.com/Open-SourceHelper/java-fundamentals-course-Open-SourceHelper](https://github.com/Open-SourceHelper/java-fundamentals-course-Open-SourceHelper)
 
-**Repositorio de código:** [Open-SourceHelper / java-fundamentals-course-Open-SourceHelper](https://github.com/Open-SourceHelper/java-fundamentals-course-Open-SourceHelper)
+**Lista de reproducción compartida por el equipo**: [YouTube](https://youtube.com/playlist?list=PLJeMlKFQeIqU&si=El0PIIh3nBqs1SFv)
 
-**Videos:** [Abrir la lista de reproducción](https://youtube.com/playlist?list=PLJeMlKFQeIqU&si=El0PIIh3nBqs1SFv)
+## Secuencia de la Lección
 
-[Video compartido por el equipo](https://youtu.be/XuoiHgIiKD0?si=kg5xMVQpYH70_Lex). La correspondencia entre los seis videos y las lecciones está pendiente de confirmación.
+### Lección 1: Haz que tu mascota hable (7 minutos)
+- **Descripción**: Abre tu primera práctica, ejecuta un programa con Run, cambia un mensaje y ordena dos instrucciones.
+- **Enlace**: [Ver la lección](https://youtu.be/XuoiHgIiKD0)
+- **Conclusiones clave**: Un programa sigue instrucciones en orden; `System.out.println("Hola, Nube");` muestra una línea en la consola.
+- **Empieza a programar**: [Abrir OnlineGDB - Práctica 1](https://onlinegdb.com/KtfLzdwhI)
+**¡No es necesario registrarse!**
 
-## Lección 1 · Haz que tu mascota hable (7 min)
+### Lección 2: ¿Cuánta energía tiene Nube? (7 minutos)
+- **Descripción**: Guarda datos en variables, distingue texto de números y actualiza la energía de Nube con un premio.
+- **Enlace**: [Ver la lección](https://youtu.be/UDz3TJUtQVQ)
+- **Conclusiones clave**: `String nombre = "Nube";` guarda texto, `int energia = 2;` guarda enteros; `energia = energia + premio;` actualiza el valor; `2 + 3` da 5 pero `"2" + "3"` da 23.
+- **Práctica**: [Clic para programar](https://onlinegdb.com/CvoYuv9gM)
+**¡Inicio inmediato!**
 
-Abre tu primera práctica, ejecuta un programa con Run, cambia un mensaje y ordena dos instrucciones.
+### Lección 3: ¿Juega o descansa? Decisiones y bucles (8 minutos)
+- **Descripción**: Decide con if-else si Nube entra al parque, cuenta pasos con for y recarga energía con while.
+- **Enlace**: [Ver la lección](https://youtu.be/NEZsPIUfO1E)
+- **Conclusiones clave**: `if (energia >= 3) { ... } else { ... }`; `for (int paso = 1; paso <= 3; paso++) { }`; `while (energia < 3) { energia++; }`
+- **Práctica**: [Clic para programar](https://onlinegdb.com/R6xIjKpk3)
+**¡No necesitas registrarte!**
 
-Un programa sigue instrucciones en orden. Con `System.out.println("Hola, Nube");` se muestra una línea en la consola.
+### Lección 4: Ponle un nombre al entrar — Métodos, entrada/salida e introducción a la POO (11 minutos)
+- **Descripción**: Lee un apodo con Scanner, crea el método `saludar` con un parámetro y diseña la clase `Mascota` con su constructor.
+- **Enlace**: [Ver la lección](https://youtu.be/t4Z8rBrMPIw)
+- **Conclusiones clave**: `String apodo = teclado.nextLine();`; `static void saludar(String nombre) { }`; `class Mascota { String nombre; }`; `new Mascota(apodo)` crea un objeto.
+- **Práctica**: [Haz clic para practicar](https://onlinegdb.com/fqh-h_HjMi) (usa la consola interactiva para escribir tu apodo)
+**¡No necesitas registrarte!**
 
-[Abrir la práctica 1 en OnlineGDB](https://onlinegdb.com/KtfLzdwhI)
+### Lección 5: Construye un refugio de dos mascotas — Fundamentos de POO (14 minutos)
+- **Descripción**: Crea dos objetos, protege la energía entre 0 y 5 con getters y setters y recorre un arreglo de mascotas.
+- **Enlace**: [Ver la lección](https://youtu.be/ZLeAQqtJKrY)
+- **Conclusiones clave**: Encapsulación con `private`, `getEnergia()` y `setEnergia(int nueva)`; `if (nueva >= 0 && nueva <= 5)`; `Mascota[] equipo = {nube, sol};` y `for (Mascota mascota : equipo)`.
+- **Proyecto final**: [Crea tu refugio POO](https://onlinegdb.com/ZSdeg62VS)
+**¡Guarda y comparte con Fork!**
 
-## Lección 2 · ¿Cuánta energía tiene Nube? (7 min)
-
-Guarda datos en variables, distingue texto de números y actualiza la energía de Nube con un premio.
-
-Usa `String` para el texto e `int` para números enteros. Con números, `2 + 3` da 5. Con texto, `"2" + "3"` da «23».
-
-[Abrir la práctica 2 en OnlineGDB](https://onlinegdb.com/CvoYuv9gM)
-
-## Lección 3 · ¿Juega o descansa? Decisiones y bucles (8 min)
-
-Decide con if-else si Nube entra al parque, cuenta pasos con for y recarga energía con while.
-
-Una condición con `if-else` toma una decisión. Un bucle `for` cuenta los pasos y un bucle `while` recarga la energía mientras haga falta.
-
-[Abrir la práctica 3 en OnlineGDB](https://onlinegdb.com/R6xIjKpk3)
-
-## Lección 4 · Ponle un nombre al entrar (11 min)
-
-Lee un apodo con Scanner, crea el método saludar con un parámetro y diseña la clase Mascota con su constructor.
-
-Con `teclado.nextLine()` lees el apodo. El método `saludar` recibe ese dato y `new Mascota(apodo)` crea un objeto.
-
-[Abrir la práctica 4 en OnlineGDB](https://onlinegdb.com/fqh-h_HjMi)
-
-En esta práctica selecciona la consola interactiva, pulsa Run, escribe el apodo y pulsa Enter.
-
-## Lección 5 · Construye un refugio de dos mascotas (14 min)
-
-Crea dos objetos, protege la energía entre 0 y 5 con getters y setters y recorre un arreglo de mascotas.
-
-Con `private`, `getEnergia()` y `setEnergia(int nueva)` controlas la energía. Un arreglo de tipo `Mascota[]` permite recorrer el refugio.
-
-[Abrir la práctica 5 en OnlineGDB](https://onlinegdb.com/ZSdeg62VS)
-
-## Lección 6 · Encuentra al ladrón de galletas (10 min)
-
-Compara lo esperado con lo obtenido, corrige un índice equivocado y aprende a leer errores de compilación y de ejecución.
-
-Compara la salida con tu predicción, lee el primer aviso y prueba un cambio por vez. La primera posición de un arreglo es 0.
-
-[Abrir la práctica 6 en OnlineGDB](https://onlinegdb.com/mOJxwI_8ai)
+### Lección 6: Encuentra al ladrón de galletas — Depuración y próximos pasos (10 minutos)
+- **Descripción**: Compara lo esperado con lo obtenido, corrige un índice equivocado y aprende a leer errores de compilación y de ejecución.
+- **Enlace**: [Ver la lección](https://youtu.be/TWjn_QspT_8)
+- **Consejos clave**: Escribe lo esperado, observa lo real, cambia una cosa y vuelve a probar; lee primero el primer aviso (`';' expected`); los índices empiezan en 0 (`ArrayIndexOutOfBoundsException`).
+- **Práctica**: [Clic para depurar](https://onlinegdb.com/mOJxwI_8ai)
 
 ## Recursos adicionales
+- **Código fuente completo**: [Repositorio de GitHub](https://github.com/Open-SourceHelper/java-fundamentals-course-Open-SourceHelper)
+- **Todas las actividades prácticas**:
 
-[Learn Java · conceptos del lenguaje](https://dev.java/learn/language-basics/) (en inglés). Reto adicional: agrega una tercera mascota al refugio y predice su índice antes de ejecutar.
+| Número de lección | Actividad | Empezar a programar |
+|----------|----------|-------------|
+| 1 | Hola, Nube (mensajes y orden) | [OnlineGDB](https://onlinegdb.com/KtfLzdwhI) |
+| 2 | Variables y energía | [OnlineGDB](https://onlinegdb.com/CvoYuv9gM) |
+| 3 | Decisiones y bucles | [OnlineGDB](https://onlinegdb.com/R6xIjKpk3) |
+| 4 | Scanner, métodos y clases | [OnlineGDB](https://onlinegdb.com/fqh-h_HjMi) |
+| 5 | Refugio POO (encapsulación y arreglos) | [OnlineGDB](https://onlinegdb.com/ZSdeg62VS) |
+| 6 | Depuración | [OnlineGDB](https://onlinegdb.com/mOJxwI_8ai) |
 
-## Elaboración del curso
+- Para seguir aprendiendo: [Learn Java · conceptos del lenguaje](https://dev.java/learn/language-basics/) (en inglés)
+- Reto extra: agrega una tercera mascota al refugio y predice su índice antes de ejecutar.
 
-Universidad Peruana de Ciencias Aplicadas · Ingeniería de Software · 202620 · 1ASI0729 Desarrollo de Aplicaciones Open Source · NRC 7793.
+**¡Gracias por completar el curso!**
 
-**Equipo:** Open-SourceHelper.
+---
 
-El material reúne seis guiones, seis ejercicios iniciales y seis soluciones. Cada ejercicio utiliza el mismo ejemplo de la mascota virtual y cuenta con su propia práctica en el navegador.
+## Elaboración
 
-**Líder:** por confirmar.
+El equipo preparó una secuencia de seis lecciones sobre la mascota Nube. Cada lección reúne un video, un guion, un programa inicial y una solución para comparar en OnlineGDB.
 
-**Integrantes y aportes individuales:** pendientes de confirmación por el equipo.
+Universidad Peruana de Ciencias Aplicadas  
+Carrera de Ingeniería de Software  
+Período 202620  
+1ASI0729 Desarrollo de Aplicaciones Open Source  
+NRC 7793  
+**Nombre del equipo**: Open-SourceHelper  
+**Líder del equipo**: Matthew Shinko Okuhama Diaz  
+**Integrantes del equipo**:
 
-**Fecha de entrega:** por confirmar.
+- Felipe Marcelo Huamanchumo Chicchon
+- Gabriel Alejandro Vilchez Vite
+- Fabricio Flores Chavez
+- Matthew Shinko Okuhama Diaz
+- Cristian Joseph Trigoso Garrido
+
+**Fecha de entrega**: 26 de noviembre de 2026
